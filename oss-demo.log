@@ -1,0 +1,23 @@
+    2018-05-31 16:57:16,382 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 16:57:21,027 INFO com.aliyun.ecs.disk.HelloDisk: com.aliyuncs.exceptions.ClientException: InvalidParameter.DiskIds : The specified parameter diskIds is not valid.
+RequestId : B9A5E361-B9FD-46E3-AB76-7B49B4A77B49
+2018-05-31 16:57:21,027 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 16:57:41,364 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 16:59:55,544 INFO com.aliyun.ecs.disk.HelloDisk: com.aliyuncs.exceptions.ClientException: InvalidParameter.DiskIds : The specified parameter diskIds is not valid.
+RequestId : 02601FB1-6944-4A4C-B92C-10105C37548C
+2018-05-31 16:59:55,544 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 17:00:09,901 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 17:00:11,370 INFO com.aliyun.ecs.disk.HelloDisk: 磁盘列表为空。
+2018-05-31 17:00:11,370 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 17:00:20,071 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 17:00:36,993 INFO com.aliyun.ecs.disk.HelloDisk: 磁盘列表为空。
+2018-05-31 17:00:36,993 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 17:01:08,018 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 17:01:09,516 INFO com.aliyun.ecs.disk.HelloDisk: 磁盘列表为空。
+2018-05-31 17:01:09,517 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 17:02:30,387 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 17:03:05,200 INFO com.aliyun.ecs.disk.HelloDisk: 磁盘列表为空。
+2018-05-31 17:03:05,200 INFO com.aliyun.ecs.disk.HelloDisk: Completed
+2018-05-31 17:04:35,128 INFO com.aliyun.ecs.disk.HelloDisk: Started
+2018-05-31 17:04:36,502 INFO com.aliyun.ecs.disk.HelloDisk: 云盘ID：d-2zebziliodb2ylftfhq5
+2018-05-31 17:04:36,502 INFO com.aliyun.ecs.disk.HelloDisk: Completed
