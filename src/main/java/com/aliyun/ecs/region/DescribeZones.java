@@ -12,8 +12,8 @@ import org.apache.log4j.PropertyConfigurator;
 import java.util.List;
 
 public class DescribeZones {
-    private static String accessKeyId = "LTAIdC9fh1tgCeWpz";
-    private static String accessKeySecret = "LTAIdC9fh1tgCeWpz";
+    private static String accessKeyId = "your accessKeyId";
+    private static String accessKeySecret = "your accessKeySecret";
     private static String regionId = "cn-beijing";
     static Logger logger = Logger.getLogger(DescribeZones.class);
 

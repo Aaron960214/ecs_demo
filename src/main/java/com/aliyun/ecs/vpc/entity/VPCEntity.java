@@ -32,7 +32,110 @@ public class VPCEntity {
     private String vRouterId;
 
     //VPC的创建时间  创建不需要设置，查询时会返回
-    private String CreationTime;
+    private String creationTime;
 
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRegionId() {
+        return regionId;
+    }
+
+    public void setRegionId(String regionId) {
+        this.regionId = regionId;
+    }
+
+    public String getCidrBlock() {
+        return cidrBlock;
+    }
+
+    public void setCidrBlock(String cidrBlock) {
+        this.cidrBlock = cidrBlock;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getClientToken() {
+        return clientToken;
+    }
+
+    public void setClientToken(String clientToken) {
+        this.clientToken = clientToken;
+    }
+
+    public String getUserCidr() {
+        return userCidr;
+    }
+
+    public void setUserCidr(String userCidr) {
+        this.userCidr = userCidr;
+    }
+
+    public String getVpcId() {
+        return vpcId;
+    }
+
+    public void setVpcId(String vpcId) {
+        this.vpcId = vpcId;
+    }
+
+    public Boolean getDefault() {
+        return isDefault;
+    }
+
+    public void setDefault(Boolean aDefault) {
+        isDefault = aDefault;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getvSwitchIds() {
+        return vSwitchIds;
+    }
+
+    public void setvSwitchIds(String vSwitchIds) {
+        this.vSwitchIds = vSwitchIds;
+    }
+
+    public String getvRouterId() {
+        return vRouterId;
+    }
+
+    public void setvRouterId(String vRouterId) {
+        this.vRouterId = vRouterId;
+    }
+
+    public String getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(String creationTime) {
+        this.creationTime = creationTime;
+    }
 }

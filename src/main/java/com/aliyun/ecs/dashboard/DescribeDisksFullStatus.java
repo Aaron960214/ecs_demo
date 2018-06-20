@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DescribeDisksFullStatus {
-    private static String accessKeyId = "LTAIdC9fh1tgCeWpz";
-    private static String accessKeySecret = "LTAIdC9fh1tgCeWpz";
+    private static String accessKeyId = "your accessKeyId";
+    private static String accessKeySecret = "your accessKeySecret";
     private static String regionId = "cn-beijing";
     static Logger logger = Logger.getLogger(DescribeDisksFullStatus.class);
        public static void main(String[] args) {

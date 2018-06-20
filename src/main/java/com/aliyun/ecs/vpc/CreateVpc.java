@@ -25,6 +25,7 @@ public class CreateVpc {
         String accessKeySecret = properties.getProperty("accessKeySecret");
         String regionId = properties.getProperty("regionId");
 
+//        System.out.println(accessKeyId);
         PropertyConfigurator.configure("conf/log4j.properties");
 
         logger.info("Started");
@@ -33,7 +34,7 @@ public class CreateVpc {
 
         CreateVpcRequest createVpcRequest = new CreateVpcRequest();
 
-        //
+
 //        createVpcRequest.setCidrBlock();
 
     }

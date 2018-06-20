@@ -13,8 +13,8 @@ import org.apache.log4j.PropertyConfigurator;
 
 public class Attach {
 
-    private static String accessKeyId = "LTAIdC9fh1tgCeWpz";
-    private static String accessKeySecret = "DRGemyCNsa1vtutNuZBdO1gfvpzGgMMY";
+    private static String accessKeyId = "your accessKeyId";
+    private static String accessKeySecret = "your accessKeySecret";
     private static String regionId = "cn-beijing";
 
 
