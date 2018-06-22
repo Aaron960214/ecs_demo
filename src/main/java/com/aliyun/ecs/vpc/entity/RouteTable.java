@@ -1,5 +1,7 @@
 package com.aliyun.ecs.vpc.entity;
 
+import com.aliyun.ecs.vpc.menu.RouterType;
+
 import java.util.List;
 
 public class RouteTable {
@@ -12,8 +14,7 @@ public class RouteTable {
      * <p>Description: 路由表所在路由器的类型 </p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
-    private String RouterType;
+    private RouterType routerType;
 
     /**
      * <p>Description: 路由表所在路由器的ID。 </p>
@@ -69,12 +70,12 @@ public class RouteTable {
         this.name = name;
     }
 
-    public String getRouterType() {
-        return RouterType;
+    public RouterType getRouterType() {
+        return routerType;
     }
 
-    public void setRouterType(String routerType) {
-        RouterType = routerType;
+    public void setRouterType(RouterType routerType) {
+        this.routerType = routerType;
     }
 
     public String getRouterId() {

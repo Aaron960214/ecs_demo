@@ -1,5 +1,7 @@
 package com.aliyun.ecs.vpc.entity;
 
+import com.aliyun.ecs.vpc.menu.VSwitchStatus;
+
 /**
  *
  * <p>Copyright: All Rights Reserved</p>
@@ -33,8 +35,7 @@ public class VSwitchEntity {
      * <p>Description: 	交换机的状态  Pending  Available </p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
-    private String status;
+    private VSwitchStatus status;
 
     /**
      * <p>Description: 交换机的网段 </p>
@@ -102,11 +103,11 @@ public class VSwitchEntity {
         this.vpcId = vpcId;
     }
 
-    public String getStatus() {
+    public VSwitchStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(VSwitchStatus status) {
         this.status = status;
     }
 

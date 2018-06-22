@@ -1,5 +1,7 @@
 package com.aliyun.ecs.vpc.entity;
 
+import com.aliyun.ecs.vpc.menu.NextHopType;
+
 /**
  *
  * <p>Copyright: All Rights Reserved</p>
@@ -17,8 +19,7 @@ public class NextHopEntity {
      * <p>Description: 下一跳的类型 默认Instance（ECS实例）</p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
-    private String nextHopType;
+    private NextHopType nextHopType;
 
     /**
      * <p>Description: 下一跳实例的id </p>
@@ -38,6 +39,8 @@ public class NextHopEntity {
      */
     private Integer weight;
 
+
+
     public Long getId() {
         return id;
     }
@@ -54,11 +57,11 @@ public class NextHopEntity {
         this.name = name;
     }
 
-    public String getNextHopType() {
+    public NextHopType getNextHopType() {
         return nextHopType;
     }
 
-    public void setNextHopType(String nextHopType) {
+    public void setNextHopType(NextHopType nextHopType) {
         this.nextHopType = nextHopType;
     }
 

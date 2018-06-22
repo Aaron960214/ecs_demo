@@ -1,5 +1,7 @@
 package com.aliyun.ecs.vpc.entity;
 
+import com.aliyun.ecs.vpc.menu.VpcStatus;
+
 /**
  *
  * <p>Copyright: All Rights Reserved</p>
@@ -30,7 +32,7 @@ public class VPCEntity {
     private Boolean isDefault;
 
     //
-    private String status;
+    private VpcStatus status;
 
     //VPC中交换机的列表
     private String vSwitchIds;
@@ -114,11 +116,11 @@ public class VPCEntity {
         isDefault = aDefault;
     }
 
-    public String getStatus() {
+    public VpcStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(VpcStatus status) {
         this.status = status;
     }
 

@@ -1,5 +1,8 @@
 package com.aliyun.ecs.vpc.entity;
 
+import com.aliyun.ecs.vpc.menu.RouteEntryStatus;
+import com.aliyun.ecs.vpc.menu.RouteEntryType;
+
 import java.util.List;
 
 /**
@@ -18,7 +21,6 @@ public class RouteEntryEntity {
      * <p>Description: 路由条目的类型  </p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
     private String type;
 
     /**
@@ -37,7 +39,6 @@ public class RouteEntryEntity {
      * <p>Description:下一跳的类型 </p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
     private String nextHopType;
 
     /**
@@ -50,8 +51,7 @@ public class RouteEntryEntity {
      * <p>Description: 路由条目的状态 </p>
      * <p>Author:qbLiu/刘琪斌</p>
      */
-    //TODO 枚举
-    private String status;
+    private RouteEntryStatus status;
 
     /**
      * <p>Description:路由条目所在路由器的ID </p>
@@ -122,11 +122,11 @@ public class RouteEntryEntity {
         this.instanceId = instanceId;
     }
 
-    public String getStatus() {
+    public RouteEntryStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(RouteEntryStatus status) {
         this.status = status;
     }
 
