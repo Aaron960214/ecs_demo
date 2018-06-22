@@ -2,8 +2,8 @@ package com.aliyun.ecs.vpc;
 
 import com.aliyun.ecs.acsClinet.AcsClient;
 import com.aliyuncs.IAcsClient;
-import com.aliyuncs.ecs.model.v20140526.DescribeVpcsRequest;
-import com.aliyuncs.ecs.model.v20140526.DescribeVpcsResponse;
+import com.aliyuncs.ecs.model.v20140526.DescribeRouterInterfacesRequest;
+import com.aliyuncs.ecs.model.v20140526.DescribeRouterInterfacesResponse;
 import com.aliyuncs.exceptions.ClientException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -13,11 +13,17 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 
-public class DescribeVpcs {
+/**
+ *
+ * <p>Copyright: All Rights Reserved</p>
+ * <p>Company:  </p>
+ * <p>Description: 查询指定地域内的路由器接口 </p>
+ * <p>Author:qbLiu/刘琪斌</p>
+ */
+public class DescribeRouterInterfaces {
+    static Logger logger = Logger.getLogger(DescribeRouterInterfaces.class);
 
-    static Logger logger = Logger.getLogger(DescribeVpcs.class);
-
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         Properties properties = new Properties();
         InputStream asStream = CreateVpc.class.getClassLoader().getResourceAsStream("config/account.properties");
 
@@ -33,31 +39,28 @@ public class DescribeVpcs {
 
         IAcsClient acsClient = new AcsClient().getAcsClient(regionId, accessKeyId, accessKeySecret);
 
-        DescribeVpcsRequest vpcsRequest = new DescribeVpcsRequest();
+        DescribeRouterInterfacesRequest request = new DescribeRouterInterfacesRequest();
 
-        vpcsRequest.setIsDefault(false);
-        vpcsRequest.setRegionId("cn-beijing");
+        request.setRegionId("cn-beijing");
 
-        DescribeVpcsResponse acsResponse = null;
+        DescribeRouterInterfacesResponse acsResponse = null;
         try {
-            acsResponse = acsClient.getAcsResponse(vpcsRequest);
-            List<DescribeVpcsResponse.Vpc> vpcs = acsResponse.getVpcs();
+            acsResponse = acsClient.getAcsResponse(request);
+            List<DescribeRouterInterfacesResponse.RouterInterfaceType> routerInterfaceSet = acsResponse.getRouterInterfaceSet();
 
-            if(vpcs.isEmpty()){
-                logger.info("磁盘列表为空。");
+            if(routerInterfaceSet.isEmpty()){
+                System.out.println("kong ");
             }else{
-                for (DescribeVpcsResponse.Vpc vpc:vpcs){
-                    logger.info("磁盘名称："+vpc.getVpcName());
-                    System.out.println(vpc.getVpcName());
-                    System.out.println(vpc.getVRouterId());
-                }
+                System.out.println(routerInterfaceSet.toString());
             }
+
         } catch (ClientException e) {
+
             logger.error(e);
         }
 
 
-
         logger.info("--结束--");
     }
+
 }

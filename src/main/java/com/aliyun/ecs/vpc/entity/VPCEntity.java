@@ -1,5 +1,12 @@
 package com.aliyun.ecs.vpc.entity;
 
+/**
+ *
+ * <p>Copyright: All Rights Reserved</p>
+ * <p>Company:</p>
+ * <p>Description: VPC实体类 </p>
+ * <p>Author:qbLiu/刘琪斌</p>
+ */
 public class VPCEntity {
 
     private Long id;
